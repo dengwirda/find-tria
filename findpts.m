@@ -23,8 +23,12 @@ function [tm,im] = findpts(tr,pi)
 %   Last updated    : 18/12/2014
 
 %----------------------- call SCANTREE to do the actual work
-   [tm,im] = scantree(tr,pi,@partpts);
-
+    if (nargout == +1)
+       [tm   ] = scantree(tr,pi,@partpts);     
+    else
+       [tm,im] = scantree(tr,pi,@partpts);
+    end
+    
 end
 
 function [j1,j2] = partpts (pi,b1,b2)
