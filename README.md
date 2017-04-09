@@ -24,6 +24,6 @@ triademo(3); % compare FINDTRIA and TSEARCHN for higher-dimensional problems.
 ````
 # `Attribution!`
 
-`FINDTRIA` makes use of the <a href="https://github.com/dengwirda/aabb-tree">`AABBTREE`</a> package. The underlying `AABB-tree` construction and search methods are described in further detail here: 
+`FINDTRIA` makes use of the <a href="https://github.com/dengwirda/aabb-tree">`AABBTREE`</a> package, and is used extensively in the grid-generator <a href="https://github.com/dengwirda/mesh2d">`MESH2D`</a>.The underlying `AABB-tree` construction and search methods are described in further detail here: 
 
 `[1]` - Darren Engwirda, <a href="http://hdl.handle.net/2123/13148">Locally-optimal Delaunay-refinement and optimisation-based mesh generation</a>, Ph.D. Thesis, School of Mathematics and Statistics, The University of Sydney, September 2014.
