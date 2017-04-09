@@ -1,6 +1,6 @@
-# `FINDTRIA: Point-in-simplex queries in MATLAB`
+# `FINDTRIA: Point-In-Simplex Queries in R^d`
 
-Efficient d-dimensional `point-in-simplex` queries in <a href="http://www.mathworks.com">`MATLAB`</a> / <a href="https://www.gnu.org/software/octave">`OCTAVE`</a>.
+`FINDTRIA` provides efficient d-dimensional `point-in-simplex` queries in <a href="http://www.mathworks.com">`MATLAB`</a> / <a href="https://www.gnu.org/software/octave">`OCTAVE`</a>.
 
 `FINDTRIA` computes spatial queries for collections of simplexes (triangles, tetrahedrons, etc) in d-dimensional space. Unlike MATLAB's existing point-location facilities, FINDTRIA supports general collections of simplexes, including non-Delaunay, non-convex, and even overlapping configurations, and can compute multiple intersections per query point. 
 
