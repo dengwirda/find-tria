@@ -1,4 +1,4 @@
-# `FINDTRIA: Point-In-Simplex Queries in R^d`
+## `FINDTRIA: Point-In-Simplex Queries in R^d`
 
 `FINDTRIA` provides efficient d-dimensional `point-in-simplex` queries in <a href="http://www.mathworks.com">`MATLAB`</a> / <a href="https://www.gnu.org/software/octave">`OCTAVE`</a>.
 
@@ -14,7 +14,7 @@
 
 `FINDTRIA` was not specifically designed to outperform `MATLAB`'s existing point-location routines (though it sometimes does a good job), it's main purpose is to facilitate efficient queries on non-Delaunay triangulations in arbitrary dimensions -- capabilities that are currently unsupported by existing inbuilt routines.
 
-# `Starting Out`
+## `Starting Out`
 
 After downloading and unzipping the current <a href="https://github.com/dengwirda/find-tria/archive/master.zip">repository</a>, navigate to the installation directory within <a href="http://www.mathworks.com">`MATLAB`</a> / <a href="https://www.gnu.org/software/octave">`OCTAVE`</a> and run the set of examples contained in `triademo.m`:
 ````
@@ -22,7 +22,7 @@ triademo(1); % point-location for a 2-dimensional non-Delaunay triangulation.
 triademo(2); % point-location for a 3-dimensional non-Delaunay triangulation.
 triademo(3); % compare FINDTRIA and TSEARCHN for higher-dimensional problems.
 ````
-# `Attribution!`
+## `Attribution!`
 
 `FINDTRIA` makes use of the <a href="https://github.com/dengwirda/aabb-tree">`AABBTREE`</a> package, and is used extensively in the grid-generator <a href="https://github.com/dengwirda/mesh2d">`MESH2D`</a>.The underlying `AABB-tree` construction and search methods are described in further detail here: 
 
