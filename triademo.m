@@ -8,7 +8,7 @@ function triademo(varargin)
 %   See also FINDTRIA, MAKETREE
 
 %   Darren Engwirda : 2014 --
-%   Email           : engwirda@mit.edu
+%   Email           : de2363@columbia.edu
 %   Last updated    : 09/04/2017
 
     if (nargin>=1) 
@@ -16,11 +16,6 @@ function triademo(varargin)
     else
         id =   +1;
     end
-
-    filename = mfilename('fullpath');
-    filepath = fileparts( filename );
-
-    addpath([filepath,'/aabb-tree']);
 
     close all ;
 
@@ -59,11 +54,12 @@ function demo1
     filepath = fileparts( filename );
 
     addpath([filepath,'/mesh-file']);
+    addpath([filepath,'/aabb-tree']);
 
     meshfile = ...
         [filepath,'/test-data/lake.msh'] ;
 
-    mesh = readmsh(meshfile);
+    mesh = loadmsh(meshfile);
     
     vert = mesh.point.coord(:,1:2);
     tria = mesh.tria3.index(:,1:3);
@@ -131,11 +127,12 @@ function demo2
     filepath = fileparts( filename );
 
     addpath([filepath,'/mesh-file']);
+    addpath([filepath,'/aabb-tree']);
 
     meshfile = ...
         [filepath,'/test-data/eight.msh'] ;
 
-    mesh = readmsh(meshfile);
+    mesh = loadmsh(meshfile);
     
     vert = mesh.point.coord(:,1:3);
     tria = mesh.tria4.index(:,1:4);
@@ -212,6 +209,12 @@ function demo3
 '   computations may become inefficient, due to exponential\n',...
 '   scaling with increasing dimensionality.\n\n',...
 '   FINDTRIA typically outperforms the TSEARCHN routine.\n\n']) ;
+
+    filename = mfilename('fullpath');
+    filepath = fileparts( filename );
+
+    addpath([filepath,'/mesh-file']);
+    addpath([filepath,'/aabb-tree']);
 
 %------------------------------------- point-location in R^3
     fprintf(1,[...
