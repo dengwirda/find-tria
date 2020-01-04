@@ -7,7 +7,7 @@
 `FINDTRIA` is based on an efficient d-dimensional `AABB-tree`, which is used to speed-up the computation of spatial queries. 
 
 <p align="center">
-  <img src = "../master/test-data/img/find-tria-small.jpg">
+  <img src = "../master/test-data/img/find-tria.jpg">
 </p>
 
 `FINDTRIA` is relatively efficient. It's typically many orders of magnitude faster than brute-force searches, and is often faster than `MATLAB`'s inbuilt routine `TSEARCHN`, especially when the number of query points is large. `MATLAB`'s inbuilt `POINTLOCATION` routine is usually faster than `FINDTRIA` when the underlying triangulation is Delaunay, but is often slower -- sometimes by a large factor -- for non-Delaunay triangulations. It is also restricted to two- and three-dimensional problems.
