@@ -57,7 +57,7 @@ function demo1
     addpath([filepath,'/aabb-tree']);
 
     meshfile = ...
-        [filepath,'/test-data/lake.msh'] ;
+        [filepath,'/test-data/lakes.msh'] ;
 
     mesh = loadmsh(meshfile);
     
