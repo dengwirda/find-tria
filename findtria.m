@@ -42,7 +42,7 @@ function [tp,tj,tr] = findtria(pp,tt,pj,varargin)
 %   = FINDTRIA(PP,TT,PI,TR,OP). See MAKETREE for additional 
 %   information.
 %
-%   See also MAKETREE, QUERYSET
+%   See also MAKETREE, EXCHANGE, QUERYSET
 
 % Please see the following for additional information:
 %
